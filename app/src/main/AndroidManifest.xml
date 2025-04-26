@@ -10,22 +10,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SRIce">
-
-        <!-- LoginPage as the default activity -->
+        <activity
+            android:name=".ProfilePage"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpPage"
+            android:exported="false" /> <!-- LoginPage as the default activity -->
         <activity
             android:name=".LoginPage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- HomePage activity (not the default) -->
+        </activity> <!-- HomePage activity (not the default) -->
         <activity
             android:name=".HomePage"
             android:exported="false" />
-
     </application>
 
 </manifest>
